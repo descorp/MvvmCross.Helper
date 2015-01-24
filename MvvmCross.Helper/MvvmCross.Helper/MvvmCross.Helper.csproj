@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C5520C8-7E43-4E5F-8FE5-047C240C983B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MvvmCross.Helper</RootNamespace>
+    <AssemblyName>MvvmCross.Helper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.0\lib\net45\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.0\lib\net45\Cirrious.CrossCore.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.0\lib\net45\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.0\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Accelerometer">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Accelerometer.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Accelerometer.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Accelerometer.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Accelerometer.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Accelerometer.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.All">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.All.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.All.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Bookmarks">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Bookmarks.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Plugins.Bookmarks.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Color">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Color.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Color.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Color.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Color.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Color.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.DownloadCache.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Email">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Email.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Email.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Email.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Email.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.File">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.File.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.File.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.File.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.File.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Json">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Json.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.JsonLocalisation">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.JsonLocalisation.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Plugins.JsonLocalisation.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Location">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Location.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Location.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Location.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Messenger.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Network">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Network.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Network.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Network.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Network.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.PhoneCall">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.PhoneCall.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Plugins.PhoneCall.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.PictureChooser">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.PictureChooser.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Plugins.PictureChooser.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.ReflectionEx">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.ReflectionEx.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.ReflectionEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.ReflectionEx.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.ReflectionEx.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.ReflectionEx.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.ResourceLoader">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.ResourceLoader.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.ResourceLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.ResourceLoader.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.ResourceLoader.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.ResourceLoader.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Share">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Share.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Share.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Share.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Share.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Share.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.SoundEffects">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.SoundEffects.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Plugins.SoundEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Sqlite.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.ThreadUtils">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.ThreadUtils.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.ThreadUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.ThreadUtils.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.ThreadUtils.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.ThreadUtils.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Visibility">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Visibility.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Visibility.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Visibility.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Visibility.3.5.0\lib\net45\Cirrious.MvvmCross.Plugins.Visibility.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.WebBrowser">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.WebBrowser.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Plugins.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.0\lib\net45\Cirrious.MvvmCross.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Client.2.2.0\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstrap\AccelerometerPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\ColorPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\EmailPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\LocationPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\NetworkPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\ReflectionExPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\ResourceLoaderPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\SharePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\SqlitePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\ThreadUtilsPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
+    <Compile Include="Core\App.cs" />
+    <Compile Include="Core\Converters\BoolToColorConverter.cs" />
+    <Compile Include="Core\Converters\BoolToNullableBool.cs" />
+    <Compile Include="Core\Converters\BoolToPresencePicture.cs" />
+    <Compile Include="Core\Converters\BoolToVisibility.cs" />
+    <Compile Include="Core\Converters\DynamicExtentions.cs" />
+    <Compile Include="Core\Converters\MillisecondsToLongTime.cs" />
+    <Compile Include="Core\Converters\MillisecondsToShortTime.cs" />
+    <Compile Include="Core\Converters\PhoneNumberHelper.cs" />
+    <Compile Include="Core\Converters\TextSelectionColor.cs" />
+    <Compile Include="Core\CustomAppStart.cs" />
+    <Compile Include="Core\Services\NavigationService\ErrorApplicationObject.cs" />
+    <Compile Include="Core\Services\AccountService\IAccountService.cs" />
+    <Compile Include="Core\Services\StorageService\Credentails\ICredentialsStorageService.cs" />
+    <Compile Include="Core\Services\IMediaPlayer.cs" />
+    <Compile Include="Core\Services\NotifiactionService\IMessageSource.cs" />
+    <Compile Include="Core\Services\NotifiactionService\INotificationService.cs" />
+    <Compile Include="Core\Services\NotifiactionService\IReportError.cs" />
+    <Compile Include="Core\Services\HttpService\IResponce.cs" />
+    <Compile Include="Core\Services\HttpService\ISessionContainer.cs" />
+    <Compile Include="Core\Services\StorageService\ISqliteTableService.cs" />
+    <Compile Include="Core\Services\DataService\IUpdatable.cs" />
+    <Compile Include="Core\Services\Repositories\IViewModelStorage.cs" />
+    <Compile Include="Core\Services\HttpService\IWebConnector.cs" />
+    <Compile Include="Core\Services\WebSocketService\IWebSocketConnector.cs" />
+    <Compile Include="Core\Services\WebSocketService\IWebSocketService.cs" />
+    <Compile Include="Core\Models\CredentialsModel.cs" />
+    <Compile Include="Core\Models\DataContracts\IModel.cs" />
+    <Compile Include="Core\Models\DataContracts\IResult.cs" />
+    <Compile Include="Core\Models\DataContracts\ModelBase.cs" />
+    <Compile Include="Core\Models\MediaInfo.cs" />
+    <Compile Include="Core\Models\Messages\Message.cs" />
+    <Compile Include="Core\Models\SqliteEntities\IPrimaryKeyHolder.cs" />
+    <Compile Include="Core\Models\SqliteEntities\SqliteCredential.cs" />
+    <Compile Include="Core\Models\SqliteEntities\SqliteLogItem.cs" />
+    <Compile Include="Core\Models\ValidationReport.cs" />
+    <Compile Include="Core\Services\StorageService\Credentails\CredentialsStorageService.cs" />
+    <Compile Include="Core\Services\AccountService\UserDataService.cs" />
+    <Compile Include="Core\Services\DataService\ContactsService.cs" />
+    <Compile Include="Core\Services\DataService\UpdatableStorageBase.cs" />
+    <Compile Include="Core\Services\HttpService\ApiInteraction.cs" />
+    <Compile Include="Core\Services\HttpService\ApiMethod.cs" />
+    <Compile Include="Core\Services\HttpService\ApiMethodsCollections.cs" />
+    <Compile Include="Core\Services\HttpService\ApiMethodType.cs" />
+    <Compile Include="Core\Services\HttpService\MethodType.cs" />
+    <Compile Include="Core\Services\HttpService\Responce.cs" />
+    <Compile Include="Core\Services\HttpService\SessionContainer.cs" />
+    <Compile Include="Core\Services\HttpService\WebResponces.cs" />
+    <Compile Include="Core\Services\Repositories\ViewModelRepoBase.cs" />
+    <Compile Include="Core\Services\NavigationService\INavigateMyselfService.cs" />
+    <Compile Include="Core\Services\LoggerService\ILogger.cs" />
+    <Compile Include="Core\Services\LoggerService\ILogWriter.cs" />
+    <Compile Include="Core\Services\LoggerService\Logger.cs" />
+    <Compile Include="Core\Services\LoggerService\LogWriter.cs" />
+    <Compile Include="Core\Services\NavigationService\NavigateMyselfService.cs" />
+    <Compile Include="Core\Services\NotifiactionService\NotificationService.cs" />
+    <Compile Include="Core\Services\StorageService\SqlServiceBase.cs" />
+    <Compile Include="Core\Services\WebSocketService\CreateWebSocketConnection.cs" />
+    <Compile Include="Core\Services\WebSocketService\WebSocketService.cs" />
+    <Compile Include="Core\ViewModels\Abstract\AccountAccessViewModel.cs" />
+    <Compile Include="Core\ViewModels\Abstract\BaseListItemViewModel.cs" />
+    <Compile Include="Core\ViewModels\Abstract\BaseListViewModel.cs" />
+    <Compile Include="Core\ViewModels\Abstract\BaseViewModel.cs" />
+    <Compile Include="Core\ViewModels\Abstract\CustomObservableCollection.cs" />
+    <Compile Include="Core\ViewModels\ICleanable.cs" />
+    <Compile Include="Core\ViewModels\ISelectable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ToDo-MvvmCross\_ Wpf UI.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
